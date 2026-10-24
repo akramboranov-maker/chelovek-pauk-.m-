@@ -1,0 +1,6 @@
+{
+  "name": "The Beginning: Spider Dizert",
+  "description": "A high-octane 3D superhero action-adventure game featuring Spider Dizert with realistic web-swinging, dynamic combat, 40 distinct city environments, 200 unique suits, open-world missions, and cinematic boss battles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

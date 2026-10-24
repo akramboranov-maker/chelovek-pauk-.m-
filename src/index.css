@@ -1,0 +1,68 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import "tailwindcss";
+
+@keyframes titleShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes arachnidGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.7)) drop-shadow(0 0 35px rgba(239, 68, 68, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 25px rgba(251, 146, 60, 0.9)) drop-shadow(0 0 50px rgba(244, 63, 94, 0.6));
+  }
+}
+
+@keyframes webPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+}
+
+.animated-title-gradient {
+  background-size: 200% auto;
+  animation: titleShimmer 4s ease-in-out infinite;
+}
+
+.animated-title-glow {
+  animation: arachnidGlow 3s ease-in-out infinite;
+}
+
+.animated-web-pulse {
+  animation: webPulse 2.5s ease-in-out infinite;
+}
+
+/* Custom Sleek Scrollbar for Menus & Panels */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.6);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.9);
+}
